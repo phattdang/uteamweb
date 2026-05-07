@@ -32,6 +32,13 @@ export interface PlanInfo {
   features: PlanFeature[]
 }
 
+export interface ToolContact {
+  name: string
+  iconName: 'Facebook' | 'MessageCircle' | 'Mail'
+  url: string
+  description: string
+}
+
 export interface Tool {
   id: string
   slug: string
@@ -43,6 +50,7 @@ export interface Tool {
   image: string
   demoVideoId: string
   setupGuides: SetupGuide[]
+  contacts?: ToolContact[]
 }
 
 export const durationLabels: Record<DurationType, string> = {
@@ -90,7 +98,21 @@ export const tools: Tool[] = [
         ],
       },
     image: 'https://res.cloudinary.com/dkrrib3mb/image/upload/v1777108493/Untitled_vdwbze.jpg',
-    demoVideoId: 'dQw4w9WgXcQ',
+    demoVideoId: 'aC1YJjPhIpA',
+    contacts: [
+      {
+        name: 'Zalo Hỗ Trợ : 0845 491 149 (Mizx)',
+        iconName: 'MessageCircle',
+        url: 'https://zalo.me/0845491149',
+        description: 'Chat qua Zalo để được hỗ trợ riêng biệt'
+      },
+      {
+        name: 'Facebook Cá Nhân (Minh Tran)',
+        iconName: 'Facebook',
+        url: 'https://www.facebook.com/groupTPT',
+        description: 'Nhắn tin qua Facebook'
+      }
+    ],
     setupGuides: [
       {
         id: 'g1',
@@ -128,17 +150,77 @@ export const tools: Tool[] = [
           { number: 3, title: 'Optimize CPU Usage', description: 'Adjust performance settings to reduce CPU and memory consumption' },
           { number: 4, title: 'Account Safety Check', description: 'Verify account security and update session tokens regularly' }
         ]
+      },
+      {
+        id: 'g4',
+        title: 'Hướng dẫn đặt tên cho từng giả lập',
+        description: 'Hướng dẫn cài đặt tên cho từng giả lập',
+        youtubeLink: 'https://youtu.be/CyQr4bBOgP0',
+        steps: [
+          { number: 1, title: 'Enable Debug Mode', description: 'Turn on debug logging to identify issues in bot execution' },
+          { number: 2, title: 'Check Logs', description: 'Review the detailed log files to troubleshoot specific problems' },
+          { number: 3, title: 'Optimize CPU Usage', description: 'Adjust performance settings to reduce CPU and memory consumption' },
+          { number: 4, title: 'Account Safety Check', description: 'Verify account security and update session tokens regularly' }
+        ]
+      },
+      {
+        id: 'g5',
+        title: 'Hướng dẫn tạo tệp tài khoản cho từng giả lập',
+        description: 'Hướng dẫn tạo tệp tài khoản cho từng giả lập',
+        youtubeLink: 'https://youtu.be/XTZJ4YnO5TQ',
+        steps: [
+          { number: 1, title: 'Enable Debug Mode', description: 'Turn on debug logging to identify issues in bot execution' },
+          { number: 2, title: 'Check Logs', description: 'Review the detailed log files to troubleshoot specific problems' },
+          { number: 3, title: 'Optimize CPU Usage', description: 'Adjust performance settings to reduce CPU and memory consumption' },
+          { number: 4, title: 'Account Safety Check', description: 'Verify account security and update session tokens regularly' }
+        ]
+      },
+      {
+        id: 'g6',
+        title: 'Hướng dẫn đăng nhập tài khoản lần đầu sau khi cài giả lập và game',
+        description: 'Hướng dẫn đăng nhập tài khoản lần đầu sau khi cài giả lập và game',
+        youtubeLink: 'https://youtu.be/rtFdMNPfvzM',
+        steps: [
+          { number: 1, title: 'Enable Debug Mode', description: 'Turn on debug logging to identify issues in bot execution' },
+          { number: 2, title: 'Check Logs', description: 'Review the detailed log files to troubleshoot specific problems' },
+          { number: 3, title: 'Optimize CPU Usage', description: 'Adjust performance settings to reduce CPU and memory consumption' },
+          { number: 4, title: 'Account Safety Check', description: 'Verify account security and update session tokens regularly' }
+        ]
+      },
+      {
+        id: 'g7',
+        title: 'Hướng dẫn xử lý khi lỗi luồng chạy',
+        description: 'Hướng dẫn xử lý khi lỗi luồng chạy do các vấn đề',
+        youtubeLink: 'https://youtu.be/wD7mVnyppgc',
+        steps: [
+          { number: 1, title: 'Enable Debug Mode', description: 'Turn on debug logging to identify issues in bot execution' },
+          { number: 2, title: 'Check Logs', description: 'Review the detailed log files to troubleshoot specific problems' },
+          { number: 3, title: 'Optimize CPU Usage', description: 'Adjust performance settings to reduce CPU and memory consumption' },
+          { number: 4, title: 'Account Safety Check', description: 'Verify account security and update session tokens regularly' }
+        ]
+      },
+      {
+        id: 'g8',
+        title: 'Hướng dẫn sử dụng sau khi cài đặt xong tất cả',
+        description: 'Hướng dẫn sử dụng sau khi cài đặt xong tất cả',
+        youtubeLink: 'https://youtu.be/1XUuO9sDr3w',
+        steps: [
+          { number: 1, title: 'Enable Debug Mode', description: 'Turn on debug logging to identify issues in bot execution' },
+          { number: 2, title: 'Check Logs', description: 'Review the detailed log files to troubleshoot specific problems' },
+          { number: 3, title: 'Optimize CPU Usage', description: 'Adjust performance settings to reduce CPU and memory consumption' },
+          { number: 4, title: 'Account Safety Check', description: 'Verify account security and update session tokens regularly' }
+        ]
       }
     ]
   },
   {
     id: '2',
     slug: 'FC Mobile Auto',
-    name: 'FC Mobile Auto',
-    description: 'Bot Discord/Telegram quản lý cộng đồng và trả lời tự động',
+    name: 'FC Mobile Auto (Đang cập nhật)',
+    description: '(Đang cập nhật)',
     fullDescription: 'PingMe Network Bot là giải pháp toàn diện để quản lý cộng đồng Discord hoặc Telegram của bạn. Tự động hóa kiểm duyệt, xử lý hỗ trợ khách hàng, quản lý thông báo và tương tác với thành viên thông qua các phản hồi bot thông minh.',
     pricing: {
-        '1-month': 300000,
+        '1-month': 0,
         '3-months': 800000,
         '6-months': 1500000,
         '1-year': 2500000,
@@ -217,11 +299,11 @@ export const tools: Tool[] = [
   {
     id: '3',
     slug: 'FC Hàn Auto',
-    name: 'FC Hàn Auto',
-    description: 'Tự động hóa macro nâng cao cho trình giả lập game di động',
+    name: 'FC Hàn Auto (Đang cập nhật)',
+    description: '(Đang cập nhật)',
     fullDescription: 'FC Hàn Auto cung cấp khả năng tự động hóa và ghi macro mạnh mẽ cho các trình giả lập game di động. Tạo chuỗi thao tác phức tạp, xử lý vòng lặp gameplay lặp đi lặp lại và tự động farm với khả năng kiểm soát chính xác và độ tin cậy cao.',
     pricing: {
-        '1-month': 600000,
+        '1-month': 0,
         '3-months': 1500000,
         '6-months': 2800000,
         '1-year': 4500000,
@@ -313,11 +395,11 @@ export const tools: Tool[] = [
   {
     id: '4',
     slug: 'Garena Auto Login',
-    name: 'Garena Auto Login',
-    description: 'Tự động hóa macro nâng cao cho trình giả lập game di động',
+    name: 'Garena Auto Login (Đang cập nhật)',
+    description: '(Đang cập nhật)',
     fullDescription: 'Garena Auto Login cung cấp khả năng tự động hóa và ghi macro mạnh mẽ cho các trình giả lập game di động. Tạo chuỗi thao tác phức tạp, xử lý vòng lặp gameplay lặp đi lặp lại và tự động farm với khả năng kiểm soát chính xác và độ tin cậy cao.',
     pricing: {
-        '1-month': 600000,
+        '1-month': 0,
         '3-months': 1500000,
         '6-months': 2800000,
         '1-year': 4500000,

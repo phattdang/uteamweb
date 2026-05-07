@@ -119,7 +119,7 @@ export function PricingCard({ tool }: PricingCardProps) {
 
         {/* Contact Button */}
         <div className="relative mb-6">
-          <ContactClient />
+          <ContactClient contacts={tool.contacts} />
         </div>
 
         {/* Features List */}

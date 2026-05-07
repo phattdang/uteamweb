@@ -3,8 +3,13 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { ContactModal } from './contact-modal'
+import { ToolContact } from '@/lib/tools-data'
 
-export function ContactClient() {
+export interface ContactClientProps {
+  contacts?: ToolContact[]
+}
+
+export function ContactClient({ contacts }: ContactClientProps) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -16,7 +21,7 @@ export function ContactClient() {
       >
         Liên hệ
       </Button>
-      <ContactModal open={open} onOpenChange={setOpen} />
+      <ContactModal open={open} onOpenChange={setOpen} contacts={contacts} />
     </>
   )
 }

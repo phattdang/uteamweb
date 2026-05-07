@@ -1,35 +1,45 @@
 'use client'
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { Facebook, MessageCircle, Mail, ExternalLink } from 'lucide-react'
+import { Facebook, MessageCircle, Mail, ExternalLink, LucideIcon } from 'lucide-react'
+import { ToolContact } from '@/lib/tools-data'
 
 interface ContactModalProps {
   open: boolean
   onOpenChange: (open: boolean) => void
+  contacts?: ToolContact[]
 }
 
-const contactChannels = [
+const defaultContactChannels: ToolContact[] = [
   {
     name: 'Facebook',
-    icon: Facebook,
+    iconName: 'Facebook',
     url: 'https://www.facebook.com/unemployedteam',
     description: 'Message us on Facebook'
   },
   {
     name: 'Zalo',
-    icon: MessageCircle,
+    iconName: 'MessageCircle',
     url: 'https://zalo.me/unemployedteam',
     description: 'Chat with us on Zalo'
   },
   {
     name: 'Email',
-    icon: Mail,
+    iconName: 'Mail',
     url: 'mailto:support@unemployedteam.com',
     description: 'Send us an email'
   }
 ]
 
-export function ContactModal({ open, onOpenChange }: ContactModalProps) {
+const iconMap: Record<string, LucideIcon> = {
+  Facebook,
+  MessageCircle,
+  Mail
+}
+
+export function ContactModal({ open, onOpenChange, contacts }: ContactModalProps) {
+  const displayContacts = contacts && contacts.length > 0 ? contacts : defaultContactChannels
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-md">
@@ -37,8 +47,8 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
           <DialogTitle>Liên hệ với chúng tôi</DialogTitle>
         </DialogHeader>
         <div className="space-y-3">
-          {contactChannels.map((channel) => {
-            const Icon = channel.icon
+          {displayContacts.map((channel) => {
+            const Icon = iconMap[channel.iconName] || MessageCircle
             return (
               <a
                 key={channel.name}

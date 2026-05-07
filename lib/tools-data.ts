@@ -98,7 +98,7 @@ export const tools: Tool[] = [
         ],
       },
     image: 'https://res.cloudinary.com/dkrrib3mb/image/upload/v1777108493/Untitled_vdwbze.jpg',
-    demoVideoId: 'aC1YJjPhIpA',
+    demoVideoId: 't1GbGGWIRJM',
     contacts: [
       {
         name: 'Zalo Hỗ Trợ : 0845 491 149 (Mizx)',

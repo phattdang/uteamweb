@@ -9,7 +9,7 @@ interface PricingCardProps {
   tool: Tool
 }
 
-const durations: DurationType[] = ['1-month', '3-months', '6-months', '1-year', '2-years', 'lifetime']
+const durations: DurationType[] = ['1-month', '3-months', '6-months', '1-year', 'lifetime']
 
 export function PricingCard({ tool }: PricingCardProps) {
   const [selectedDuration, setSelectedDuration] = useState<DurationType>('1-month')
@@ -25,7 +25,6 @@ export function PricingCard({ tool }: PricingCardProps) {
       case '3-months': return price / 3
       case '6-months': return price / 6
       case '1-year': return price / 12
-      case '2-years': return price / 24
       default: return null
     }
   }
@@ -36,8 +35,7 @@ export function PricingCard({ tool }: PricingCardProps) {
     const monthlyPrice = tool.pricing['1-month']
     const totalIfMonthly = duration === '3-months' ? monthlyPrice * 3
       : duration === '6-months' ? monthlyPrice * 6
-      : duration === '1-year' ? monthlyPrice * 12
-      : monthlyPrice * 24 // 2-years
+      : monthlyPrice * 12 // 1-year
     const actualPrice = tool.pricing[duration]
     return Math.round(((totalIfMonthly - actualPrice) / totalIfMonthly) * 100)
   }
@@ -102,7 +100,7 @@ export function PricingCard({ tool }: PricingCardProps) {
             </span>
             {!isLifetime && (
               <span className="text-sm text-muted-foreground">
-                /{selectedDuration === '1-month' ? 'tháng' : selectedDuration === '3-months' ? '3 tháng' : selectedDuration === '6-months' ? '6 tháng' : selectedDuration === '1-year' ? 'năm' : '2 năm'}
+                /{selectedDuration === '1-month' ? 'tháng' : selectedDuration === '3-months' ? '3 tháng' : selectedDuration === '6-months' ? '6 tháng' : 'năm'}
               </span>
             )}
           </div>

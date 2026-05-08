@@ -10,14 +10,13 @@ export interface SetupGuide {
   }[]
 }
 
-export type DurationType = '1-month' | '3-months' | '6-months' | '1-year' | '2-years' | 'lifetime'
+export type DurationType = '1-month' | '3-months' | '6-months' | '1-year' | 'lifetime'
 
 export interface PlanPricing {
   '1-month': number
   '3-months': number
   '6-months': number
   '1-year': number
-  '2-years': number
   'lifetime': number
 }
 
@@ -58,7 +57,6 @@ export const durationLabels: Record<DurationType, string> = {
   '3-months': '3 Tháng',
   '6-months': '6 Tháng',
   '1-year': '1 Năm',
-  '2-years': '2 Năm',
   'lifetime': 'Vĩnh viễn',
 }
 
@@ -79,7 +77,6 @@ export const tools: Tool[] = [
   //       '3-months': 1000000,
   //       '6-months': 2000000,
   //       '1-year': 3500000,
-  //       '2-years': 5000000,
   //       'lifetime': 8000000,
   //     },
   //   plan: {
@@ -216,16 +213,15 @@ export const tools: Tool[] = [
   {
     id: '2',
     slug: 'fc-mobile-auto',
-    name: 'FC Mobile Auto (Đang cập nhật)',
-    description: '(Đang cập nhật)',
-    fullDescription: 'PingMe Network Bot là giải pháp toàn diện để quản lý cộng đồng Discord hoặc Telegram của bạn. Tự động hóa kiểm duyệt, xử lý hỗ trợ khách hàng, quản lý thông báo và tương tác với thành viên thông qua các phản hồi bot thông minh.',
+    name: 'FC Mobile VN Auto',
+    description: 'Chơi FC Mobile VN trên giả lập PC với nhiều tính năng hỗ trợ',
+    fullDescription: 'Chơi FC Mobile VN trên giả lập PC với các tính năng tự động và hỗ trợ tối ưu. Công cụ được phát triển cho phiên bản PC và yêu cầu cấu hình máy tính đáp ứng, hỗ trợ các tác vụ tự động trong game, quản lý tài khoản và tối ưu hiệu năng.',
     pricing: {
-        '1-month': 0,
-        '3-months': 800000,
-        '6-months': 1500000,
-        '1-year': 2500000,
-        '2-years': 4000000,
-        'lifetime': 6000000,
+        '1-month': 450000,
+        '3-months': 1200000,
+        '6-months': 2200000,
+        '1-year': 3800000,
+        'lifetime': 4500000,
       },
     plan: {
         name: 'Tiêu chuẩn',
@@ -242,58 +238,90 @@ export const tools: Tool[] = [
         ],
       },
     image: 'https://res.cloudinary.com/dkrrib3mb/image/upload/v1777112850/unnamed_z3pwpq.png',
-    demoVideoId: 'dQw4w9WgXcQ',
-    setupGuides: [
+    demoVideoId: 'BDms1eF-pd8',
+    contacts: [
       {
-        id: 'g1',
-        title: 'Bot Installation & Discord/Telegram Setup',
-        description: 'Step-by-step guide to installing PingMe Network Bot and integrating it with your Discord server or Telegram group. Configure permissions and basic settings.',
-        youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        steps: [
-          { number: 1, title: 'Create Bot Account', description: 'Go to Discord Developer Portal or Telegram Bot Father and create a new bot' },
-          { number: 2, title: 'Get API Token', description: 'Copy your bot token and add it to PingMe Network Bot settings' },
-          { number: 3, title: 'Set Bot Permissions', description: 'Configure required permissions: Send Messages, Manage Messages, Read Histories' },
-          { number: 4, title: 'Invite to Server', description: 'Invite the bot to your Discord server or add it to your Telegram group' }
-        ]
+        name: 'Zalo Hỗ Trợ : 0984 309 204 (Đặng Nguyễn Tiến Phát)',
+        iconName: 'MessageCircle',
+        url: 'https://zalo.me/0984309204',
+        description: 'Chat qua Zalo để được hỗ trợ riêng biệt'
       },
       {
-        id: 'g2',
-        title: 'Creating Custom Commands & Responses',
-        description: 'Build custom commands tailored to your community. Learn how to set up automated responses, moderation rules, and engagement features.',
-        youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        steps: [
-          { number: 1, title: 'Open Command Builder', description: 'Access the Command Builder dashboard in PingMe Network Bot' },
-          { number: 2, title: 'Create New Command', description: 'Define command name, trigger keyword, and response message' },
-          { number: 3, title: 'Add Conditions', description: 'Set up conditional logic for when commands should trigger' },
-          { number: 4, title: 'Set Permissions', description: 'Choose which user roles can use each command' },
-          { number: 5, title: 'Deploy', description: 'Save and deploy your commands to the live bot' }
-        ]
+        name: 'Zalo Hỗ Trợ : 0347 451 855 (Phạm Khiêm)',
+        iconName: 'MessageCircle',
+        url: 'https://zalo.me/0347451855',
+        description: 'Chat qua Zalo để được hỗ trợ riêng biệt'
       },
       {
-        id: 'g3',
-        title: 'Analytics & Community Insights',
-        description: 'Monitor your community engagement with built-in analytics. Track member activity, message trends, and optimize your bot responses based on data.',
-        youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        steps: [
-          { number: 1, title: 'Access Analytics Dashboard', description: 'Open the Analytics tab to view real-time community metrics' },
-          { number: 2, title: 'Track Member Activity', description: 'Monitor active users, message counts, and engagement patterns' },
-          { number: 3, title: 'View Command Usage', description: 'See which commands are most popular and how often they\'re used' },
-          { number: 4, title: 'Generate Reports', description: 'Create detailed analytics reports for community insights' }
-        ]
+        name: 'Facebook Cá Nhân (Mẽo Ngọt)',
+        iconName: 'Facebook',
+        url: 'https://www.facebook.com/uteam664dntp/',
+        description: 'Nhắn tin qua Facebook'
       },
       {
-        id: 'g4',
-        title: 'Advanced Security & Moderation',
-        description: 'Set up advanced moderation features including spam detection, user verification, role management, and automated enforcement of community guidelines.',
-        youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        steps: [
-          { number: 1, title: 'Enable Spam Detection', description: 'Turn on automatic spam filtering and rate limiting' },
-          { number: 2, title: 'Configure Verification', description: 'Set up member verification requirements and welcome flows' },
-          { number: 3, title: 'Create Moderation Rules', description: 'Define auto-moderation rules for violations and warnings' },
-          { number: 4, title: 'Manage Roles', description: 'Set up automatic role assignment based on conditions' },
-          { number: 5, title: 'Log Enforcement', description: 'Enable detailed logs for all moderation actions' }
-        ]
+        name: 'Facebook Cá Nhân (Phạm Khiêm)',
+        iconName: 'Facebook',
+        url: 'https://www.facebook.com/pham.khiem.643159',
+        description: 'Nhắn tin qua Facebook'
+      },
+      {
+        name: 'Facebook Cá Nhân (Phạm Sỹ Hải)',
+        iconName: 'Facebook',
+        url: 'https://www.facebook.com/SHsyhai',
+        description: 'Nhắn tin qua Facebook'
       }
+    ],
+    setupGuides: [
+      // {
+      //   id: 'g1',
+      //   title: 'Bot Installation & Discord/Telegram Setup',
+      //   description: 'Step-by-step guide to installing PingMe Network Bot and integrating it with your Discord server or Telegram group. Configure permissions and basic settings.',
+      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      //   steps: [
+      //     { number: 1, title: 'Create Bot Account', description: 'Go to Discord Developer Portal or Telegram Bot Father and create a new bot' },
+      //     { number: 2, title: 'Get API Token', description: 'Copy your bot token and add it to PingMe Network Bot settings' },
+      //     { number: 3, title: 'Set Bot Permissions', description: 'Configure required permissions: Send Messages, Manage Messages, Read Histories' },
+      //     { number: 4, title: 'Invite to Server', description: 'Invite the bot to your Discord server or add it to your Telegram group' }
+      //   ]
+      // },
+      // {
+      //   id: 'g2',
+      //   title: 'Creating Custom Commands & Responses',
+      //   description: 'Build custom commands tailored to your community. Learn how to set up automated responses, moderation rules, and engagement features.',
+      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      //   steps: [
+      //     { number: 1, title: 'Open Command Builder', description: 'Access the Command Builder dashboard in PingMe Network Bot' },
+      //     { number: 2, title: 'Create New Command', description: 'Define command name, trigger keyword, and response message' },
+      //     { number: 3, title: 'Add Conditions', description: 'Set up conditional logic for when commands should trigger' },
+      //     { number: 4, title: 'Set Permissions', description: 'Choose which user roles can use each command' },
+      //     { number: 5, title: 'Deploy', description: 'Save and deploy your commands to the live bot' }
+      //   ]
+      // },
+      // {
+      //   id: 'g3',
+      //   title: 'Analytics & Community Insights',
+      //   description: 'Monitor your community engagement with built-in analytics. Track member activity, message trends, and optimize your bot responses based on data.',
+      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      //   steps: [
+      //     { number: 1, title: 'Access Analytics Dashboard', description: 'Open the Analytics tab to view real-time community metrics' },
+      //     { number: 2, title: 'Track Member Activity', description: 'Monitor active users, message counts, and engagement patterns' },
+      //     { number: 3, title: 'View Command Usage', description: 'See which commands are most popular and how often they\'re used' },
+      //     { number: 4, title: 'Generate Reports', description: 'Create detailed analytics reports for community insights' }
+      //   ]
+      // },
+      // {
+      //   id: 'g4',
+      //   title: 'Advanced Security & Moderation',
+      //   description: 'Set up advanced moderation features including spam detection, user verification, role management, and automated enforcement of community guidelines.',
+      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      //   steps: [
+      //     { number: 1, title: 'Enable Spam Detection', description: 'Turn on automatic spam filtering and rate limiting' },
+      //     { number: 2, title: 'Configure Verification', description: 'Set up member verification requirements and welcome flows' },
+      //     { number: 3, title: 'Create Moderation Rules', description: 'Define auto-moderation rules for violations and warnings' },
+      //     { number: 4, title: 'Manage Roles', description: 'Set up automatic role assignment based on conditions' },
+      //     { number: 5, title: 'Log Enforcement', description: 'Enable detailed logs for all moderation actions' }
+      //   ]
+      // }
     ]
   },
   {
@@ -307,7 +335,6 @@ export const tools: Tool[] = [
         '3-months': 1500000,
         '6-months': 2800000,
         '1-year': 4500000,
-        '2-years': 8000000,
         'lifetime': 12000000,
       },
     plan: {
@@ -326,6 +353,38 @@ export const tools: Tool[] = [
       },
     image: 'https://res.cloudinary.com/dkrrib3mb/image/upload/v1777108568/Untitled_q1axcs.jpg',
     demoVideoId: 'dQw4w9WgXcQ',
+    contacts: [
+      {
+        name: 'Zalo Hỗ Trợ : 0984 309 204 (Đặng Nguyễn Tiến Phát)',
+        iconName: 'MessageCircle',
+        url: 'https://zalo.me/0984309204',
+        description: 'Chat qua Zalo để được hỗ trợ riêng biệt'
+      },
+      {
+        name: 'Zalo Hỗ Trợ : 0347 451 855 (Phạm Khiêm)',
+        iconName: 'MessageCircle',
+        url: 'https://zalo.me/0347451855',
+        description: 'Chat qua Zalo để được hỗ trợ riêng biệt'
+      },
+      {
+        name: 'Facebook Cá Nhân (Mẽo Ngọt)',
+        iconName: 'Facebook',
+        url: 'https://www.facebook.com/uteam664dntp/',
+        description: 'Nhắn tin qua Facebook'
+      },
+      {
+        name: 'Facebook Cá Nhân (Phạm Khiêm)',
+        iconName: 'Facebook',
+        url: 'https://www.facebook.com/pham.khiem.643159',
+        description: 'Nhắn tin qua Facebook'
+      },
+      {
+        name: 'Facebook Cá Nhân (Phạm Sỹ Hải)',
+        iconName: 'Facebook',
+        url: 'https://www.facebook.com/SHsyhai',
+        description: 'Nhắn tin qua Facebook'
+      }
+    ],
     setupGuides: [
       {
         id: 'g1',
@@ -403,8 +462,7 @@ export const tools: Tool[] = [
         '3-months': 350000,
         '6-months': 600000,
         '1-year': 800000,
-        '2-years': 1500000,
-        'lifetime': 3000000,
+        'lifetime': 1500000,
       },
     plan: {
         name: 'Tiêu chuẩn',

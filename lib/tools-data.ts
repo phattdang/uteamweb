@@ -218,10 +218,10 @@ export const tools: Tool[] = [
     fullDescription: 'Chơi FC Mobile VN trên giả lập PC với các tính năng tự động và hỗ trợ tối ưu. Công cụ được phát triển cho phiên bản PC và yêu cầu cấu hình máy tính đáp ứng, hỗ trợ các tác vụ tự động trong game, quản lý tài khoản và tối ưu hiệu năng.',
     pricing: {
         '1-month': 450000,
-        '3-months': 1200000,
-        '6-months': 2200000,
-        '1-year': 3800000,
-        'lifetime': 4500000,
+        '3-months': 900000,
+        '6-months': 1500000,
+        '1-year': 2500000,
+        'lifetime': 3500000,
       },
     plan: {
         name: 'Tiêu chuẩn',

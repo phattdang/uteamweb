@@ -269,56 +269,43 @@ export const tools: Tool[] = [
       }
     ],
     setupGuides: [
-      // {
-      //   id: 'g1',
-      //   title: 'Bot Installation & Discord/Telegram Setup',
-      //   description: 'Step-by-step guide to installing PingMe Network Bot and integrating it with your Discord server or Telegram group. Configure permissions and basic settings.',
-      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      //   steps: [
-      //     { number: 1, title: 'Create Bot Account', description: 'Go to Discord Developer Portal or Telegram Bot Father and create a new bot' },
-      //     { number: 2, title: 'Get API Token', description: 'Copy your bot token and add it to PingMe Network Bot settings' },
-      //     { number: 3, title: 'Set Bot Permissions', description: 'Configure required permissions: Send Messages, Manage Messages, Read Histories' },
-      //     { number: 4, title: 'Invite to Server', description: 'Invite the bot to your Discord server or add it to your Telegram group' }
-      //   ]
-      // },
-      // {
-      //   id: 'g2',
-      //   title: 'Creating Custom Commands & Responses',
-      //   description: 'Build custom commands tailored to your community. Learn how to set up automated responses, moderation rules, and engagement features.',
-      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      //   steps: [
-      //     { number: 1, title: 'Open Command Builder', description: 'Access the Command Builder dashboard in PingMe Network Bot' },
-      //     { number: 2, title: 'Create New Command', description: 'Define command name, trigger keyword, and response message' },
-      //     { number: 3, title: 'Add Conditions', description: 'Set up conditional logic for when commands should trigger' },
-      //     { number: 4, title: 'Set Permissions', description: 'Choose which user roles can use each command' },
-      //     { number: 5, title: 'Deploy', description: 'Save and deploy your commands to the live bot' }
-      //   ]
-      // },
-      // {
-      //   id: 'g3',
-      //   title: 'Analytics & Community Insights',
-      //   description: 'Monitor your community engagement with built-in analytics. Track member activity, message trends, and optimize your bot responses based on data.',
-      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      //   steps: [
-      //     { number: 1, title: 'Access Analytics Dashboard', description: 'Open the Analytics tab to view real-time community metrics' },
-      //     { number: 2, title: 'Track Member Activity', description: 'Monitor active users, message counts, and engagement patterns' },
-      //     { number: 3, title: 'View Command Usage', description: 'See which commands are most popular and how often they\'re used' },
-      //     { number: 4, title: 'Generate Reports', description: 'Create detailed analytics reports for community insights' }
-      //   ]
-      // },
-      // {
-      //   id: 'g4',
-      //   title: 'Advanced Security & Moderation',
-      //   description: 'Set up advanced moderation features including spam detection, user verification, role management, and automated enforcement of community guidelines.',
-      //   youtubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      //   steps: [
-      //     { number: 1, title: 'Enable Spam Detection', description: 'Turn on automatic spam filtering and rate limiting' },
-      //     { number: 2, title: 'Configure Verification', description: 'Set up member verification requirements and welcome flows' },
-      //     { number: 3, title: 'Create Moderation Rules', description: 'Define auto-moderation rules for violations and warnings' },
-      //     { number: 4, title: 'Manage Roles', description: 'Set up automatic role assignment based on conditions' },
-      //     { number: 5, title: 'Log Enforcement', description: 'Enable detailed logs for all moderation actions' }
-      //   ]
-      // }
+      {
+        id: 'g1',
+        title: 'Hướng dẫn cài đặt và cấu hình giả lập (Bắt buộc phải xem)',
+        description: 'Video hướng dẫn cài đặt và cấu hình giả lập để sử dụng tool FC Mobile VN Auto một cách hiệu quả. Tìm hiểu các thiết lập cần thiết và tối ưu hóa hiệu năng. (Bắt buộc phải xem)',
+        youtubeLink: 'https://youtu.be/BgOAX2kIjzk',
+        steps: [
+          { number: 1, title: 'Create Bot Account', description: 'Go to Discord Developer Portal or Telegram Bot Father and create a new bot' },
+          { number: 2, title: 'Get API Token', description: 'Copy your bot token and add it to PingMe Network Bot settings' },
+          { number: 3, title: 'Set Bot Permissions', description: 'Configure required permissions: Send Messages, Manage Messages, Read Histories' },
+          { number: 4, title: 'Invite to Server', description: 'Invite the bot to your Discord server or add it to your Telegram group' }
+        ]
+      },
+      {
+        id: 'g2',
+        title: 'Hướng dẫn cấu hình ngôn ngữ cho giả lập (Bắt buộc phải xem)',
+        description: 'Hướng dẫn cấu hình ngôn ngữ cho giả lập để sử dụng tool FC Mobile VN Auto một cách hiệu quả. Tìm hiểu các thiết lập cần thiết và tối ưu hóa hiệu năng. (Bắt buộc phải xem)',
+        youtubeLink: 'https://youtu.be/stnBHKz0ppw',
+        steps: [
+          { number: 1, title: 'Open Command Builder', description: 'Access the Command Builder dashboard in PingMe Network Bot' },
+          { number: 2, title: 'Create New Command', description: 'Define command name, trigger keyword, and response message' },
+          { number: 3, title: 'Add Conditions', description: 'Set up conditional logic for when commands should trigger' },
+          { number: 4, title: 'Set Permissions', description: 'Choose which user roles can use each command' },
+          { number: 5, title: 'Deploy', description: 'Save and deploy your commands to the live bot' }
+        ]
+      },
+      {
+        id: 'g3',
+        title: 'Mô tả và hướng dẫn chung về tool FC Mobile VN Auto',
+        description: 'Mô tả và hướng dẫn chung về tool FC Mobile VN Auto. Tìm hiểu các tính năng cần thiết và tối ưu hóa hiệu năng.',
+        youtubeLink: 'https://youtu.be/3x73tE_zsvs',
+        steps: [
+          { number: 1, title: 'Access Analytics Dashboard', description: 'Open the Analytics tab to view real-time community metrics' },
+          { number: 2, title: 'Track Member Activity', description: 'Monitor active users, message counts, and engagement patterns' },
+          { number: 3, title: 'View Command Usage', description: 'See which commands are most popular and how often they\'re used' },
+          { number: 4, title: 'Generate Reports', description: 'Create detailed analytics reports for community insights' }
+        ]
+      }
     ]
   },
   {

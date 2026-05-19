@@ -1,114 +1,72 @@
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react'
+import { Facebook, MessageCircle } from 'lucide-react'
 
 export function Footer() {
-  const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' },
+  const teamContacts = [
+    {
+      name: 'Zalo Hỗ Trợ : 0984 309 204 (Đặng Nguyễn Tiến Phát)',
+      icon: MessageCircle,
+      url: 'https://zalo.me/0984309204',
+      description: 'Chat qua Zalo để được hỗ trợ riêng biệt'
+    },
+    {
+      name: 'Zalo Hỗ Trợ : 0347 451 855 (Phạm Khiêm)',
+      icon: MessageCircle,
+      url: 'https://zalo.me/0347451855',
+      description: 'Chat qua Zalo để được hỗ trợ riêng biệt'
+    },
+    {
+      name: 'Facebook Cá Nhân (Mẽo Ngọt)',
+      icon: Facebook,
+      url: 'https://www.facebook.com/uteam664dntp/',
+      description: 'Nhắn tin qua Facebook'
+    },
+    {
+      name: 'Facebook Cá Nhân (Phạm Khiêm)',
+      icon: Facebook,
+      url: 'https://www.facebook.com/pham.khiem.643159',
+      description: 'Nhắn tin qua Facebook'
+    },
+    {
+      name: 'Facebook Cá Nhân (Phạm Sỹ Hải)',
+      icon: Facebook,
+      url: 'https://www.facebook.com/SHsyhai',
+      description: 'Nhắn tin qua Facebook'
+    }
   ]
 
   return (
     <footer className="w-full border-t border-border/40 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          {/* Brand */}
-          <div className="space-y-4">
-            <h3 className="font-bold text-lg">Unemployed Team</h3>
-            <p className="text-sm text-muted-foreground">
-              Các công cụ tự động hóa và hỗ trợ tối ưu dành cho bạn.
-            </p>
-          </div>
-
-          {/* Product */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-sm">Sản phẩm</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Tính năng
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Bảng giá
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Bảo mật
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-sm">Công ty</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Về chúng tôi
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Tuyển dụng
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-sm">Pháp lý</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Quyền riêng tư
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Điều khoản
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Cookies
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="border-t border-border/40 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-muted-foreground">
-            © 2026 Unemployed Team. Đã đăng ký bản quyền.
-          </p>
-
-          {/* Social Links */}
-          <div className="flex gap-4">
-            {socialLinks.map((link) => {
-              const Icon = link.icon
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mb-12">
+          <h3 className="font-bold text-xl mb-6">Liên hệ với chúng tôi</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {teamContacts.map((contact, index) => {
+              const Icon = contact.icon
               return (
                 <a
-                  key={link.label}
-                  href={link.href}
-                  className="p-2 rounded-lg bg-card hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
-                  aria-label={link.label}
+                  key={index}
+                  href={contact.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 p-4 rounded-xl border border-border/50 bg-card hover:bg-muted/50 transition-colors group"
                 >
-                  <Icon className="w-5 h-5" />
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-sm line-clamp-2 leading-tight">{contact.name}</h4>
+                    <p className="text-xs text-muted-foreground mt-1">{contact.description}</p>
+                  </div>
                 </a>
               )
             })}
           </div>
+        </div>
+
+        <div className="border-t border-border/40 pt-8 flex items-center justify-center">
+          <p className="text-sm text-muted-foreground text-center">
+            © 2026 Unemployed Team. Đã đăng ký bản quyền.
+          </p>
         </div>
       </div>
     </footer>

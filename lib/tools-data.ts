@@ -394,253 +394,253 @@ export const tools: Tool[] = [
       },
     ],
   },
-  {
-    id: "3",
-    slug: "fc-han-auto",
-    name: "FC Hàn Auto (Đang cập nhật)",
-    description: "(Đang cập nhật)",
-    fullDescription:
-      "FC Hàn Auto cung cấp khả năng tự động hóa và ghi macro mạnh mẽ cho các trình giả lập game di động. Tạo chuỗi thao tác phức tạp, xử lý vòng lặp gameplay lặp đi lặp lại và tự động farm với khả năng kiểm soát chính xác và độ tin cậy cao.",
-    pricing: {
-      "1-month": 0,
-      "3-months": 1500000,
-      "6-months": 2800000,
-      "1-year": 4500000,
-      lifetime: 12000000,
-    },
-    plan: {
-      name: "Tiêu chuẩn",
-      description: "Đầy đủ tính năng",
-      features: [
-        { text: "Ghi macro cơ bản", included: true },
-        { text: "Hỗ trợ 1 trình giả lập", included: true },
-        { text: "Lưu 5 macro", included: true },
-        { text: "Hỗ trợ qua Email", included: true },
-        { text: "Tạo script nâng cao", included: true },
-        { text: "Hỗ trợ nhiều trình giả lập", included: true },
-        { text: "Không giới hạn macro", included: true },
-        { text: "Hỗ trợ ưu tiên 24/7", included: true },
-      ],
-    },
-    image:
-      "https://res.cloudinary.com/dkrrib3mb/image/upload/v1777108568/Untitled_q1axcs.jpg",
-    demoVideoId: "dQw4w9WgXcQ",
-    contacts: [
-      {
-        name: "Zalo Hỗ Trợ : 0984 309 204 (Đặng Nguyễn Tiến Phát)",
-        iconName: "MessageCircle",
-        url: "https://zalo.me/0984309204",
-        description: "Chat qua Zalo để được hỗ trợ riêng biệt",
-      },
-      {
-        name: "Zalo Hỗ Trợ : 0347 451 855 (Phạm Khiêm)",
-        iconName: "MessageCircle",
-        url: "https://zalo.me/0347451855",
-        description: "Chat qua Zalo để được hỗ trợ riêng biệt",
-      },
-      {
-        name: "Facebook Cá Nhân (Mẽo Ngọt)",
-        iconName: "Facebook",
-        url: "https://www.facebook.com/uteam664dntp/",
-        description: "Nhắn tin qua Facebook",
-      },
-      {
-        name: "Facebook Cá Nhân (Phạm Khiêm)",
-        iconName: "Facebook",
-        url: "https://www.facebook.com/pham.khiem.643159",
-        description: "Nhắn tin qua Facebook",
-      },
-      {
-        name: "Facebook Cá Nhân (Phạm Sỹ Hải)",
-        iconName: "Facebook",
-        url: "https://www.facebook.com/SHsyhai",
-        description: "Nhắn tin qua Facebook",
-      },
-    ],
-    setupGuides: [
-      {
-        id: "g1",
-        title: "Installation & Emulator Configuration",
-        description:
-          "Install Emulator Macro Pro and configure it to work seamlessly with your chosen emulator. Includes compatibility checks and optimization settings.",
-        youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        steps: [
-          {
-            number: 1,
-            title: "Install Emulator Macro Pro",
-            description:
-              "Download and install the application on your PC or Mac",
-          },
-          {
-            number: 2,
-            title: "Select Emulator",
-            description:
-              "Choose from BlueStacks, NoxPlayer, MEmu, or other supported emulators",
-          },
-          {
-            number: 3,
-            title: "Run Compatibility Check",
-            description:
-              "Let the application verify emulator compatibility and settings",
-          },
-          {
-            number: 4,
-            title: "Optimize Performance",
-            description:
-              "Configure CPU cores, RAM allocation, and resolution for best performance",
-          },
-        ],
-      },
-      {
-        id: "g2",
-        title: "Recording Your First Macro",
-        description:
-          "Learn how to record macros effectively. Understand timing, touch coordinates, and how to create reliable automation sequences that work consistently.",
-        youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        steps: [
-          {
-            number: 1,
-            title: "Start Recording",
-            description:
-              "Click the record button and the emulator window will show touch coordinates",
-          },
-          {
-            number: 2,
-            title: "Perform Actions",
-            description:
-              "Play through your gameplay sequence naturally, all actions are recorded",
-          },
-          {
-            number: 3,
-            title: "Stop Recording",
-            description:
-              "End the recording and save your macro with a meaningful name",
-          },
-          {
-            number: 4,
-            title: "Review & Adjust",
-            description:
-              "Playback the macro and adjust timing and click positions if needed",
-          },
-          {
-            number: 5,
-            title: "Test Run",
-            description:
-              "Run the macro multiple times to ensure it works consistently",
-          },
-        ],
-      },
-      {
-        id: "g3",
-        title: "Advanced Macro Scripting",
-        description:
-          "Master advanced scripting techniques including conditional logic, loops, variables, and custom functions for complex automation scenarios.",
-        youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        steps: [
-          {
-            number: 1,
-            title: "Open Script Editor",
-            description:
-              "Access the Advanced Script Editor for manual code editing",
-          },
-          {
-            number: 2,
-            title: "Learn Macro Language",
-            description:
-              "Understand the macro scripting syntax and available functions",
-          },
-          {
-            number: 3,
-            title: "Add Loops & Conditions",
-            description:
-              "Implement for loops, while loops, and if/else conditional logic",
-          },
-          {
-            number: 4,
-            title: "Create Variables",
-            description:
-              "Define and use variables to make macros more flexible and dynamic",
-          },
-          {
-            number: 5,
-            title: "Test & Debug",
-            description:
-              "Test your script with debug output and error handling",
-          },
-        ],
-      },
-      {
-        id: "g4",
-        title: "Game Integration & Anti-Detection",
-        description:
-          "Integrate with specific games and learn anti-detection strategies. Ensure your automation stays undetectable while maintaining performance.",
-        youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        steps: [
-          {
-            number: 1,
-            title: "Game Database",
-            description:
-              "Browse the game database to find pre-configured settings for your game",
-          },
-          {
-            number: 2,
-            title: "Enable Anti-Detection",
-            description:
-              "Turn on anti-detection features to avoid game ban systems",
-          },
-          {
-            number: 3,
-            title: "Add Random Delays",
-            description:
-              "Configure random delays between actions to mimic human behavior",
-          },
-          {
-            number: 4,
-            title: "Screen Verification",
-            description:
-              "Add screen checks to verify game state before executing actions",
-          },
-        ],
-      },
-      {
-        id: "g5",
-        title: "Performance Monitoring & Debugging",
-        description:
-          "Monitor macro performance, troubleshoot issues, and optimize execution. Learn debugging techniques and performance profiling.",
-        youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        steps: [
-          {
-            number: 1,
-            title: "Open Performance Monitor",
-            description:
-              "View real-time execution stats and performance metrics",
-          },
-          {
-            number: 2,
-            title: "Check Execution Time",
-            description: "Analyze how long each macro action takes to execute",
-          },
-          {
-            number: 3,
-            title: "Enable Debug Log",
-            description:
-              "Turn on detailed logging to track macro execution step by step",
-          },
-          {
-            number: 4,
-            title: "Troubleshoot Failures",
-            description:
-              "Identify failed actions and adjust timing or coordinates",
-          },
-          {
-            number: 5,
-            title: "Optimize Efficiency",
-            description: "Remove unnecessary delays and consolidate operations",
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: "3",
+  //   slug: "fc-han-auto",
+  //   name: "FC Hàn Auto (Đang cập nhật)",
+  //   description: "(Đang cập nhật)",
+  //   fullDescription:
+  //     "FC Hàn Auto cung cấp khả năng tự động hóa và ghi macro mạnh mẽ cho các trình giả lập game di động. Tạo chuỗi thao tác phức tạp, xử lý vòng lặp gameplay lặp đi lặp lại và tự động farm với khả năng kiểm soát chính xác và độ tin cậy cao.",
+  //   pricing: {
+  //     "1-month": 0,
+  //     "3-months": 1500000,
+  //     "6-months": 2800000,
+  //     "1-year": 4500000,
+  //     lifetime: 12000000,
+  //   },
+  //   plan: {
+  //     name: "Tiêu chuẩn",
+  //     description: "Đầy đủ tính năng",
+  //     features: [
+  //       { text: "Ghi macro cơ bản", included: true },
+  //       { text: "Hỗ trợ 1 trình giả lập", included: true },
+  //       { text: "Lưu 5 macro", included: true },
+  //       { text: "Hỗ trợ qua Email", included: true },
+  //       { text: "Tạo script nâng cao", included: true },
+  //       { text: "Hỗ trợ nhiều trình giả lập", included: true },
+  //       { text: "Không giới hạn macro", included: true },
+  //       { text: "Hỗ trợ ưu tiên 24/7", included: true },
+  //     ],
+  //   },
+  //   image:
+  //     "https://res.cloudinary.com/dkrrib3mb/image/upload/v1777108568/Untitled_q1axcs.jpg",
+  //   demoVideoId: "dQw4w9WgXcQ",
+  //   contacts: [
+  //     {
+  //       name: "Zalo Hỗ Trợ : 0984 309 204 (Đặng Nguyễn Tiến Phát)",
+  //       iconName: "MessageCircle",
+  //       url: "https://zalo.me/0984309204",
+  //       description: "Chat qua Zalo để được hỗ trợ riêng biệt",
+  //     },
+  //     {
+  //       name: "Zalo Hỗ Trợ : 0347 451 855 (Phạm Khiêm)",
+  //       iconName: "MessageCircle",
+  //       url: "https://zalo.me/0347451855",
+  //       description: "Chat qua Zalo để được hỗ trợ riêng biệt",
+  //     },
+  //     {
+  //       name: "Facebook Cá Nhân (Mẽo Ngọt)",
+  //       iconName: "Facebook",
+  //       url: "https://www.facebook.com/uteam664dntp/",
+  //       description: "Nhắn tin qua Facebook",
+  //     },
+  //     {
+  //       name: "Facebook Cá Nhân (Phạm Khiêm)",
+  //       iconName: "Facebook",
+  //       url: "https://www.facebook.com/pham.khiem.643159",
+  //       description: "Nhắn tin qua Facebook",
+  //     },
+  //     {
+  //       name: "Facebook Cá Nhân (Phạm Sỹ Hải)",
+  //       iconName: "Facebook",
+  //       url: "https://www.facebook.com/SHsyhai",
+  //       description: "Nhắn tin qua Facebook",
+  //     },
+  //   ],
+  //   setupGuides: [
+  //     {
+  //       id: "g1",
+  //       title: "Installation & Emulator Configuration",
+  //       description:
+  //         "Install Emulator Macro Pro and configure it to work seamlessly with your chosen emulator. Includes compatibility checks and optimization settings.",
+  //       youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  //       steps: [
+  //         {
+  //           number: 1,
+  //           title: "Install Emulator Macro Pro",
+  //           description:
+  //             "Download and install the application on your PC or Mac",
+  //         },
+  //         {
+  //           number: 2,
+  //           title: "Select Emulator",
+  //           description:
+  //             "Choose from BlueStacks, NoxPlayer, MEmu, or other supported emulators",
+  //         },
+  //         {
+  //           number: 3,
+  //           title: "Run Compatibility Check",
+  //           description:
+  //             "Let the application verify emulator compatibility and settings",
+  //         },
+  //         {
+  //           number: 4,
+  //           title: "Optimize Performance",
+  //           description:
+  //             "Configure CPU cores, RAM allocation, and resolution for best performance",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "g2",
+  //       title: "Recording Your First Macro",
+  //       description:
+  //         "Learn how to record macros effectively. Understand timing, touch coordinates, and how to create reliable automation sequences that work consistently.",
+  //       youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  //       steps: [
+  //         {
+  //           number: 1,
+  //           title: "Start Recording",
+  //           description:
+  //             "Click the record button and the emulator window will show touch coordinates",
+  //         },
+  //         {
+  //           number: 2,
+  //           title: "Perform Actions",
+  //           description:
+  //             "Play through your gameplay sequence naturally, all actions are recorded",
+  //         },
+  //         {
+  //           number: 3,
+  //           title: "Stop Recording",
+  //           description:
+  //             "End the recording and save your macro with a meaningful name",
+  //         },
+  //         {
+  //           number: 4,
+  //           title: "Review & Adjust",
+  //           description:
+  //             "Playback the macro and adjust timing and click positions if needed",
+  //         },
+  //         {
+  //           number: 5,
+  //           title: "Test Run",
+  //           description:
+  //             "Run the macro multiple times to ensure it works consistently",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "g3",
+  //       title: "Advanced Macro Scripting",
+  //       description:
+  //         "Master advanced scripting techniques including conditional logic, loops, variables, and custom functions for complex automation scenarios.",
+  //       youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  //       steps: [
+  //         {
+  //           number: 1,
+  //           title: "Open Script Editor",
+  //           description:
+  //             "Access the Advanced Script Editor for manual code editing",
+  //         },
+  //         {
+  //           number: 2,
+  //           title: "Learn Macro Language",
+  //           description:
+  //             "Understand the macro scripting syntax and available functions",
+  //         },
+  //         {
+  //           number: 3,
+  //           title: "Add Loops & Conditions",
+  //           description:
+  //             "Implement for loops, while loops, and if/else conditional logic",
+  //         },
+  //         {
+  //           number: 4,
+  //           title: "Create Variables",
+  //           description:
+  //             "Define and use variables to make macros more flexible and dynamic",
+  //         },
+  //         {
+  //           number: 5,
+  //           title: "Test & Debug",
+  //           description:
+  //             "Test your script with debug output and error handling",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "g4",
+  //       title: "Game Integration & Anti-Detection",
+  //       description:
+  //         "Integrate with specific games and learn anti-detection strategies. Ensure your automation stays undetectable while maintaining performance.",
+  //       youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  //       steps: [
+  //         {
+  //           number: 1,
+  //           title: "Game Database",
+  //           description:
+  //             "Browse the game database to find pre-configured settings for your game",
+  //         },
+  //         {
+  //           number: 2,
+  //           title: "Enable Anti-Detection",
+  //           description:
+  //             "Turn on anti-detection features to avoid game ban systems",
+  //         },
+  //         {
+  //           number: 3,
+  //           title: "Add Random Delays",
+  //           description:
+  //             "Configure random delays between actions to mimic human behavior",
+  //         },
+  //         {
+  //           number: 4,
+  //           title: "Screen Verification",
+  //           description:
+  //             "Add screen checks to verify game state before executing actions",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "g5",
+  //       title: "Performance Monitoring & Debugging",
+  //       description:
+  //         "Monitor macro performance, troubleshoot issues, and optimize execution. Learn debugging techniques and performance profiling.",
+  //       youtubeLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  //       steps: [
+  //         {
+  //           number: 1,
+  //           title: "Open Performance Monitor",
+  //           description:
+  //             "View real-time execution stats and performance metrics",
+  //         },
+  //         {
+  //           number: 2,
+  //           title: "Check Execution Time",
+  //           description: "Analyze how long each macro action takes to execute",
+  //         },
+  //         {
+  //           number: 3,
+  //           title: "Enable Debug Log",
+  //           description:
+  //             "Turn on detailed logging to track macro execution step by step",
+  //         },
+  //         {
+  //           number: 4,
+  //           title: "Troubleshoot Failures",
+  //           description:
+  //             "Identify failed actions and adjust timing or coordinates",
+  //         },
+  //         {
+  //           number: 5,
+  //           title: "Optimize Efficiency",
+  //           description: "Remove unnecessary delays and consolidate operations",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     id: "4",
     slug: "garena-auto-login",

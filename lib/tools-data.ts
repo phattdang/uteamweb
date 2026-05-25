@@ -255,7 +255,7 @@ export const tools: Tool[] = [
     },
     image:
       "https://res.cloudinary.com/dkrrib3mb/image/upload/v1777112850/unnamed_z3pwpq.png",
-    demoVideoId: "BDms1eF-pd8",
+    demoVideoId: "bMne4tHTro0",
     contacts: [
       {
         name: "Zalo Hỗ Trợ : 0984 309 204 (Đặng Nguyễn Tiến Phát)",

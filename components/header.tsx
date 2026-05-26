@@ -6,10 +6,11 @@ import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
-const navLinks = [
+const navLinks: Array<{ label: string; hash?: string; href?: string }> = [
   { label: 'Tính năng', hash: 'features' },
   { label: 'Sản phẩm', hash: 'tools' },
   { label: 'Chính sách', hash: 'policies' },
+  { label: 'Cộng tác viên', href: '/ctv' },
 ]
 
 export function Header() {
@@ -39,16 +40,26 @@ export function Header() {
 
   const renderNav = () => (
     <nav className="hidden md:flex items-center gap-8">
-      {navLinks.map((link) => (
-        <a
-          key={link.hash}
-          href={`/#${link.hash}`}
-          onClick={(e) => handleNavClick(e, link.hash)}
-          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-        >
-          {link.label}
-        </a>
-      ))}
+      {navLinks.map((link) =>
+        link.href ? (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {link.label}
+          </Link>
+        ) : (
+          <a
+            key={link.hash}
+            href={`/#${link.hash}`}
+            onClick={(e) => handleNavClick(e, link.hash!)}
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {link.label}
+          </a>
+        )
+      )}
     </nav>
   )
 

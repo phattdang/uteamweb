@@ -12,10 +12,13 @@ interface PricingCardProps {
 const durations: DurationType[] = ['1-month', '3-months', '6-months', '1-year', 'lifetime']
 
 export function PricingCard({ tool }: PricingCardProps) {
+  const planInfo = tool.plan
+
+  /*
+  // Tạm thời ẩn phần chọn thời hạn và tính giá (ẩn chứ không xóa)
   const [selectedDuration, setSelectedDuration] = useState<DurationType>('1-month')
 
   const currentPrice = tool.pricing[selectedDuration]
-  const planInfo = tool.plan
   const isLifetime = selectedDuration === 'lifetime'
 
   // Calculate monthly equivalent for multi-month plans
@@ -42,6 +45,7 @@ export function PricingCard({ tool }: PricingCardProps) {
 
   const monthlyEquiv = getMonthlyEquivalent(selectedDuration)
   const savings = getSavings(selectedDuration)
+  */
 
   return (
     <div className="space-y-5">
@@ -59,7 +63,9 @@ export function PricingCard({ tool }: PricingCardProps) {
           <p className="text-xs text-muted-foreground">{planInfo.description}</p>
         </div>
 
-        {/* Duration Selector */}
+        {/* 
+        Tạm thời ẩn phần thời hạn và giá cứng theo yêu cầu (ẩn chứ không xóa):
+        
         <div className="relative grid grid-cols-2 sm:grid-cols-3 gap-2 mb-6">
           {durations.map((duration) => {
             const dSavings = getSavings(duration)
@@ -92,7 +98,6 @@ export function PricingCard({ tool }: PricingCardProps) {
           })}
         </div>
 
-        {/* Price Display */}
         <div className="relative mb-6">
           <div className="flex items-baseline gap-1">
             <span className="text-4xl font-extrabold tracking-tight text-foreground">
@@ -113,6 +118,15 @@ export function PricingCard({ tool }: PricingCardProps) {
               {savings && <span className="text-emerald-500 font-semibold ml-1">(giảm {savings}%)</span>}
             </p>
           )}
+        </div>
+        */}
+
+        {/* Thông tin Chi phí & Báo giá */}
+        <div className="relative mb-6 p-4 rounded-lg bg-violet-500/10 border border-violet-500/20">
+          <p className="text-sm font-semibold text-foreground">Chi phí & Báo giá</p>
+          <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+            Vui lòng liên hệ trực tiếp với chúng tôi để được tư vấn gói phù hợp và nhận báo giá chi tiết.
+          </p>
         </div>
 
         {/* Contact Button */}

@@ -7,7 +7,8 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ tool }: ProductCardProps) {
-  const lowestPrice = getLowestPrice(tool.pricing)
+  // Tạm thời ẩn giá cứng (ẩn chứ không xóa)
+  // const lowestPrice = getLowestPrice(tool.pricing)
 
   return (
     <Link href={`/tools/${tool.slug}`}>
@@ -35,13 +36,19 @@ export function ProductCard({ tool }: ProductCardProps) {
               </p>
             </div>
 
-            {/* Price */}
+            {/* Price - Tạm thời ẩn giá cứng, để lại liên hệ */}
             <div className="flex items-center justify-between pt-4 border-t border-muted/20">
+              {/* Tạm thời ẩn phần chi phí cứng theo yêu cầu (ẩn chứ không xóa)
               <div>
                 <p className="text-xs text-muted-foreground">Giá từ</p>
                 <p className="text-2xl font-bold text-foreground">
                   {new Intl.NumberFormat('vi-VN').format(lowestPrice)} VNĐ
                 </p>
+              </div>
+              */}
+              <div>
+                <p className="text-xs text-muted-foreground">Chi phí</p>
+                <p className="text-xl font-bold text-primary">Liên hệ</p>
               </div>
 
               {/* View Details Button */}
